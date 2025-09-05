@@ -17,7 +17,7 @@ menu = st.sidebar.radio(
 
 # 1) Coração
 if menu == "Coração":
-    dedicatoria = st.text_input("Escreva sua mensagem:", "Edu & Emy — pra sempre 💘")
+    dedicatoria = st.text_input("Escreva sua mensagem:", "Edu & Emy — Pra Sempre")
 
     t = np.linspace(0, 2*np.pi, 1000)
     x = 16*np.sin(t)**3
@@ -38,22 +38,22 @@ elif menu == "Carta Romântica":
 
     if st.button("Gerar carta 💌"):
         temas = [
-            "gratidão pela sua presença em cada detalhe do meu dia",
-            "como você deixa meu dia mais alegre",
-            "os lados que",
-            "as pequenas lembranças que aquecem meu coração"
+            "por você sempre alegrar meu dia",
+            "por ter você em minha vida",
+            "pela pessoa incrivel que você é",
+            "por sempre fazer meu coração bater mais rapido"
         ]
         lembrancas = [
-            "nosso primeiro café juntos",
-            "o passeio de mãos dadas na praia",
-            "aquela risada que me faz esquecer o mundo",
-            "o abraço que virou morada"
+            "todos os beijinhos",
+            "nos seus lindos olhos",
+            "no seu sorriso",
+            "os seus braços"
         ]
         promessas = [
-            "ouvir você com o coração aberto",
-            "celebrar suas conquistas, grandes e pequenas",
-            "aprender, crescer e recomeçar quantas vezes for preciso",
-            "ser seu porto seguro em mares calmos e revoltos"
+            "te amar sempre",
+            "os pirulitos da antonella",
+            "a loja de brinquedos",
+            "e o gloss da francine"
         ]
 
         import random
@@ -65,7 +65,7 @@ Minha {nome},
 
 Escrevo para agradecer {random.choice(temas)}. Penso em {random.choice(lembrancas)} 
 e {random.choice(lembrancas)} e sorrio sem perceber. Ao seu lado, me sinto muito feliz
-Prometo {random.choice(promessas)}. Que a nossa rota siga leve e verdadeira.
+Prometo {random.choice(promessas)}. Que nos possamos ser muito felizes sempre.
 
 {autor},
 🖊️
@@ -73,8 +73,8 @@ Prometo {random.choice(promessas)}. Que a nossa rota siga leve e verdadeira.
         st.text_area("Sua carta:", texto, height=200)
 
 elif menu == "Galeria de Fotos":
-    st.header("📸 Nossa Galeria de Memórias")
-    st.write("Alguns momentos especiais 💕")
+    st.header("📸 Nossa Galeria")
+    st.write("Alguns momentos 💕")
 
     import os
     from PIL import Image
@@ -92,5 +92,6 @@ elif menu == "Galeria de Fotos":
 
     else:
         st.warning("Nenhuma foto encontrada na pasta 'fotos'.")
+
 
 
