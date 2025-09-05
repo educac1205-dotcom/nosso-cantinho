@@ -88,7 +88,9 @@ elif menu == "Galeria de Fotos":
             caminho = os.path.join(pasta, nome_arquivo)
             img = Image.open(caminho)
             with cols[i % 3]:
-                st.image(img, use_column_width=True, caption=f"Memória {i+1}")
+                st.image(img, use_container_width=True, caption=f"Memória {i+1}")
+
     else:
         st.warning("Nenhuma foto encontrada na pasta 'fotos'.")
+
 
