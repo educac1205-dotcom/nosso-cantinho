@@ -17,7 +17,7 @@ menu = st.sidebar.radio(
 
 # 1) Coração
 if menu == "Coração":
-    dedicatoria = st.text_input("Escreva sua mensagem:", "Edu & Emy — Pra Sempre")
+    dedicatoria = ("Edu & Emy — Pra Sempre")
 
     t = np.linspace(0, 2*np.pi, 1000)
     x = 16*np.sin(t)**3
@@ -33,8 +33,8 @@ if menu == "Coração":
 
 # 2) Carta Romântica
 elif menu == "Carta Romântica":
-    nome = st.text_input("Nome da pessoa amada:", "Emy")
-    autor = st.text_input("Quem escreve:", "Edu")
+    nome = ("Emy")
+    autor =("Edu")
 
     if st.button("Gerar carta 💌"):
         temas = [
@@ -92,6 +92,7 @@ elif menu == "Galeria de Fotos":
 
     else:
         st.warning("Nenhuma foto encontrada na pasta 'fotos'.")
+
 
 
 
