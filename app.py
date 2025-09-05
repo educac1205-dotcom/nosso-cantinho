@@ -12,7 +12,7 @@ st.write("Oia que fofo 💕")
 
 menu = st.sidebar.radio(
     "Escolha uma opção:",
-    ["Coração", "Carta Romântica", "QR Code de Amor", "Contagem até Aniversário"]
+    ["Coração", "Carta Romântica", "Galeria de Fotos"]
 )
 
 # 1) Coração
@@ -91,3 +91,4 @@ elif menu == "Galeria de Fotos":
                 st.image(img, use_column_width=True, caption=f"Memória {i+1}")
     else:
         st.warning("Nenhuma foto encontrada na pasta 'fotos'.")
+
