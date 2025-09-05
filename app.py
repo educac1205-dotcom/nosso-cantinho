@@ -44,10 +44,10 @@ elif menu == "Carta Romântica":
             "por sempre fazer meu coração bater mais rapido"
         ]
         lembrancas = [
-            "todos os beijinhos",
+            "em todos os beijinhos",
             "nos seus lindos olhos",
             "no seu sorriso",
-            "os seus braços"
+            "nos seus braços"
         ]
         promessas = [
             "te amar sempre",
@@ -63,7 +63,7 @@ elif menu == "Carta Romântica":
 
 Minha {nome},
 
-Escrevo para agradecer {random.choice(temas)}. Penso em {random.choice(lembrancas)} 
+Escrevo para agradecer {random.choice(temas)}. Penso {random.choice(lembrancas)} 
 e {random.choice(lembrancas)} e sorrio sem perceber. Ao seu lado, me sinto muito feliz
 Prometo {random.choice(promessas)}. Que nos possamos ser muito felizes sempre.
 
@@ -92,6 +92,7 @@ elif menu == "Galeria de Fotos":
 
     else:
         st.warning("Nenhuma foto encontrada na pasta 'fotos'.")
+
 
 
 
